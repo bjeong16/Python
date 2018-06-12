@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import openpyxl
 import string
+from string import maketrans
 
 from openpyxl import Workbook
 from openpyxl.chart import(
@@ -81,13 +82,18 @@ def write_text_xlsx_file(used_list):
     pie.set_categories(labels)
     pie.title = "Significant words in article"
     sheet.add_chart(pie, "M1")
-    excel_file.save("Word_Analytics3.xlsx")
+    excel_file.save("Word_AnalyticsFinal.xlsx")
 
 
 if __name__ == '__main__':             # Main Program
     text_file = open("ExperimentalPython.txt", 'r')
     my_lists = text_file.read()
-    my_list = my_lists.split(' ')
+    my_list = my_lists.translate(None, string.punctuation)
+    my_list = my_list.translate(None, "\n")
+    my_list = my_list.translate(None, '"')
+    my_list = my_list.translate(None, "'")
+    my_list = my_list.lower()
+    my_list = my_list.split(' ')
     length = len(my_list)           # 파일 (.txt) 에서 텍스트를 가지고 온 후 리스트에 각 단어를 쪼개서 넣는다
 
     a = find_word_data(my_list)         # 텍스트에서 등장하는 단어의 수, 가장 많이 등장하는 단어 분석
