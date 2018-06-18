@@ -33,7 +33,7 @@ Completion 은 주어진 값으로 함축적인 값을 추리 하는 문제다. 
 ### 현재 데이터 분석 알고리즘
   현재 Data Optimization 을 위해서 사용하는 대표적인 알고리즘은 Stochastic Optimization 하고 Map-Reduce Algorithm 이다. 
   
-  ![Screenshot](Python/NOMAD/Distribution1.png)
+![차트1](Python/NOMAD/ProsAndCons.png)
   
   >> Stochastic Optimization 하고 Map-Reduce Algorithm 의 장 단점을 보여주는 차트. NOMAD 알고리즘은 이 두 가지 알고리즘의  
   장점을 합치고, 단점을 없앤다.
@@ -52,7 +52,8 @@ Completion 은 주어진 값으로 함축적인 값을 추리 하는 문제다. 
   철수가 인셉션을 관람 하지 않았거나 관람 후 평점을 내리지 않았으면 2번째 행 3번째 열의 값은 비어있다. 이 비어있는 칸의 값을 예상 하는 것이
   Matrix Completion 의 기본 문제다. 
   
-  Matrix Completion 의 가장 기본적인 공식은 Euclidean Inner Space 를 통한 계산이다. Euclidean Inner Space 는 
+  Matrix Completion 의 가장 기본적인 공식은 유클리디언 벡터 공간을 통한 계산이다.  
+  
 
   
   
