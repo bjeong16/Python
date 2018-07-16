@@ -2,3 +2,12 @@ URL: http://sifter.org/simon/journal/20061211.html
 
 위 링크는 Netflix Problem 에 관하여 올린 글인데 Singular Value Decomposition 와
 Stochastic Gradient Descent 에 관한 자료가 있다. 
+
+
+2018 / 07 /16
+
+해결 해야 할 것: 
+
+     User_dict 를 구축할때에 시간이 너무 오래걸림.
+     Offset 값을 구하는데 시간이 너무 오래걸림.
+     실제로 값들이 유효한지 아직 확실하지 않음.
